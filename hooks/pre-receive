@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import sys
+
+def main():
+    for line in sys.stdin:
+        old_rev, new_rev, ref_name = line.strip().split()
+        print(f"Old Rev: {old_rev}, New Rev: {new_rev}, Ref Name: {ref_name}")
+
+if __name__ == "__main__":
+    main()
+    sys.exit(0)
